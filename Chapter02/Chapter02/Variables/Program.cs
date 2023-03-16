@@ -49,10 +49,8 @@ kim.BirthDate = new(1967, 12, 26); // instead of: new DateTime(1967, 12, 26)
 
 Console.WriteLine($"default(int) = {default(int)}");
 Console.WriteLine($"default(bool) = {default(bool)}");
-Console.WriteLine(
-  $"default(DateTime) = {default(DateTime)}");
-Console.WriteLine(
-  $"default(string) = {default(string)}");
+Console.WriteLine($"default(DateTime) = {default(DateTime)}");
+Console.WriteLine($"default(string) = {default(string)}");
 
 int number = 13;
 Console.WriteLine($"number has been set to: {number}");
