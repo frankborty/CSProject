@@ -11,15 +11,13 @@ public class Northwind : DbContext
   public DbSet<Category>? Categories { get; set; }
   public DbSet<Product>? Products { get; set; }
 
-  protected override void OnConfiguring(
-    DbContextOptionsBuilder optionsBuilder)
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
     optionsBuilder.UseLazyLoadingProxies();
 
     if (ProjectConstants.DatabaseProvider == "SQLite")
     {
-      string path = Path.Combine(
-        Environment.CurrentDirectory, "Northwind.db");
+      string path = Path.Combine(Environment.CurrentDirectory, "Northwind.db");
 
       WriteLine($"Using {path} database file.");
 

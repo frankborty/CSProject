@@ -10,7 +10,7 @@ using static System.Console;
 
 WriteLine($"Using {ProjectConstants.DatabaseProvider} database provider.");
 
-// QueryingCategories();
+ QueryingCategories();
 // FilteredIncludes();
 QueryingProducts();
 // QueryingWithLike();
